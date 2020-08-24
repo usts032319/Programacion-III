@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="INGRESE CANTIDAD"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <RadioButton
+        android:id="@+id/optYanes"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="YUANES"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <RadioButton
+        android:id="@+id/optQuetzal"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="QUETZAL"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <RadioButton
+        android:id="@+id/optbalboa"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="BALBOA"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="330dp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_alignBottom="@+id/lblRespuesta"
+        android:layout_marginTop="312dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optMonedas" />
+
+    <RadioButton
+        android:id="@+id/optEuro"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:checked="true"
+        android:text="EURO"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <RadioButton
+        android:id="@+id/optLempira"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="LEMPIRA"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <RadioButton
+        android:id="@+id/optPeso"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="PESO MEXA"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <RadioButton
+        android:id="@+id/optColon"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="COLON"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <RadioButton
+        android:id="@+id/optCordoba"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="CORDOBA"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:layout_marginTop="52dp"
+        android:text="MONEDA A CONVERTIR"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="RESPUESTA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/optMonedas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitulo">
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        app:srcCompat="@drawable/bitcoin"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

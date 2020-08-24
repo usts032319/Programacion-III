@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Programacion-III.iml" filepath="$PROJECT_DIR$/Programacion-III.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Conversor_App.iml" filepath="$PROJECT_DIR$/.idea/modules/Conversor_App.iml" group="Conversor_App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Conversor App/app" />
     </modules>
   </component>
 </project>

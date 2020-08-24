@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlmacenamientoActivity">
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="INGRESE CANTIDAD EN MB"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <RadioGroup
+        android:id="@+id/optAlmacenamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitulo">
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:layout_marginTop="80dp"
+        android:text="TAMAÑO DE DATOS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="208dp"
+        android:layout_height="57dp"
+        android:layout_alignBottom="@+id/lblRespuesta"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optAlmacenamiento" />
+
+    <RadioButton
+        android:id="@+id/optByte"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="BYTE"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <RadioButton
+        android:id="@+id/optKilobyte"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="KILOBYE"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <RadioButton
+        android:id="@+id/optBit"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:checked="true"
+        android:text="BIT"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <RadioButton
+        android:id="@+id/optGigabyte"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="GIGA"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <RadioButton
+        android:id="@+id/optTerabyte"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="TERA"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="RESPUESTA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertir"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="84dp"
+        app:srcCompat="@drawable/almacen"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

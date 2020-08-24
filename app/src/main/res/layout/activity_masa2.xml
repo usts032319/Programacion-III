@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasaActivity">
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="251dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="INGRESE CANTIDAD EN LBS"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <RadioButton
+        android:id="@+id/optGramo"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:checked="true"
+        android:text="GRAMO"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="RESPUESTA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertir"
+        app:layout_constraintVertical_bias="0.527" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="218dp"
+        android:layout_height="54dp"
+        android:layout_alignBottom="@+id/lblRespuesta"
+        android:layout_marginTop="316dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optMasa" />
+
+    <RadioButton
+        android:id="@+id/optTonelada"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="TONELADA"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="375dp" />
+
+    <RadioButton
+        android:id="@+id/optOnza"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="ONZA"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <RadioButton
+        android:id="@+id/optKilogramo"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="KILOGRAMO"
+        tools:layout_editor_absoluteX="223dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <RadioButton
+        android:id="@+id/optQuintal"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="QUINTAL"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:layout_marginTop="16dp"
+        android:text="SELECCIONE MASA O PESO"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <RadioGroup
+        android:id="@+id/optMasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitulo">
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="118dp"
+        android:layout_height="74dp"
+        app:srcCompat="@drawable/peso"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

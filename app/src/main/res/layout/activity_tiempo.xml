@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TiempoActivity">
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="INGRESE CANTIDAD"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <RadioButton
+        android:id="@+id/optSemana"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="SEMANA"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <RadioButton
+        android:id="@+id/optMes"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="MES"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <RadioButton
+        android:id="@+id/optSegundo"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="SEGUNDOS"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <RadioButton
+        android:id="@+id/optMilisegundo"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:checked="true"
+        android:text="MILISEGUNDO"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <RadioButton
+        android:id="@+id/optDia"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:text="DIAS"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="381dp" />
+
+    <TextView
+        android:id="@+id/txttitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:layout_marginTop="48dp"
+        android:text="CONVERSIONES EN TIEMPO"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnum1" />
+
+    <RadioButton
+        android:id="@+id/optMinuto"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="MINUTO"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="233dp"
+        android:layout_height="59dp"
+        android:layout_alignBottom="@+id/lblRespuesta"
+        android:layout_marginTop="324dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optTiempo" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="RESPUESTA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvertir"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/optAño"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="AÑO"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <RadioGroup
+        android:id="@+id/optTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitulo">
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="78dp"
+        android:layout_height="121dp"
+        app:srcCompat="@drawable/hora"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="11dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

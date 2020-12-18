@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linerInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insertar vehiculo"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/txtmarca"
+            android:layout_width="match_parent"
+            android:hint="Marca"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/txtmodelo"
+            android:layout_width="match_parent"
+            android:hint="Modelo"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtyear"
+            android:layout_width="match_parent"
+            android:hint="Año"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtmotor"
+            android:hint="Numero de motor"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtchasis"
+            android:hint="Numero de chasis"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/insertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:text="Insetar datos"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

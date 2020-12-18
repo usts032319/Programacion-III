@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1045129242596",
+    "firebase_url": "https://reposicion-1e28c-default-rtdb.firebaseio.com",
+    "project_id": "reposicion-1e28c",
+    "storage_bucket": "reposicion-1e28c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045129242596:android:8d9b6c960983e911a4c9f1",
+        "android_client_info": {
+          "package_name": "com.example.reposicion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045129242596-p2g21r0qng7p4pp6ai9tbaqp0fal58e9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reposicion",
+            "certificate_hash": "41723fba18417cdbe8847f0b6e9d2edc65bbec85"
+          }
+        },
+        {
+          "client_id": "1045129242596-9jrn3m75oj203a1ctl6herg5df2fr0ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsVSs4b2c0aN1BooHTM1rs0y-zwekwnTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045129242596-9jrn3m75oj203a1ctl6herg5df2fr0ar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,14 +5,16 @@
         android:id="@+id/menu_agregar"
         app:showAsAction="always"
         android:title="Agregar" />
+
     <item
         android:id="@+id/menu_modificar"
-        android:title="Modificar"
         app:showAsAction="always"
-        />
+        android:title="Modificar" />
+
     <item
         android:id="@+id/menu_eliminar"
-        android:title="Eliminar"
         app:showAsAction="always"
-        />
+        android:title="Eliminar" />
+
+
 </menu>

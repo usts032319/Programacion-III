@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         btnCancelar = findViewById(R.id.btnCancelar);
 
         listViewCarro = findViewById(R.id.listaCarro);
+        linearEditar = findViewById(R.id.linearEditar);
 
         listViewCarro.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -86,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 productoSeleccionado = null;
             }
         });
-
 
         insertarDataFirebase();
         listarProducto();
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         Producto p = new Producto();
                         p.setId(productoSeleccionado.getId());
                         p.setMarca(Marca);
-                        p.setMotor(Modelo);
+                        p.setModelo(Modelo);
                         p.setYear(Year);
                         p.setMotor(Motor);
                         p.setChasis(Chasis);

@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout linearEditar;
     Producto productoSeleccionado;
 
+    Button btnCancelar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         year = findViewById(R.id.yearVehiculo);
         motor = findViewById(R.id.motorVehiculo);
         chasis = findViewById(R.id.chasisVehiculo);
+
+        btnCancelar = findViewById(R.id.btnCancelar);
 
         listViewCarro = findViewById(R.id.listaCarro);
 
@@ -74,6 +78,15 @@ public class MainActivity extends AppCompatActivity {
                 linearEditar.setVisibility(View.VISIBLE);
             }
         });
+
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                linearEditar.setVisibility(View.GONE);
+                productoSeleccionado = null;
+            }
+        });
+
 
         insertarDataFirebase();
         listarProducto();
@@ -143,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                         productoSeleccionado = null;
                     }
                 }else{
-                    Toast.makeText(MainActivity.this, "Seleccione un producto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Seleccione un vehiculo", Toast.LENGTH_SHORT).show();
                 }
 
                 break;
@@ -158,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
                     productoSeleccionado = null;
                     Toast.makeText(MainActivity.this, "Eliminado correctamente", Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(MainActivity.this, "Seleccione un producto para eliminar", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Seleccione un vehiculo para eliminar", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
@@ -197,6 +210,15 @@ public class MainActivity extends AppCompatActivity {
                     showError(txtMarca, "Descripcion no es validad 'Min. 3 letras '");
 
                 }else if (modelotext.isEmpty() || modelotext.length() < 1){
+                    showError(txtModelo, "Precio no es validad 'Min. 1 numero '");
+
+                }else if (yeartext.isEmpty() || yeartext.length() < 1){
+                    showError(txtYear, "Precio no es validad 'Min. 1 numero '");
+
+                }else if (motortext.isEmpty() || motortext.length() < 1){
+                    showError(txtMotor, "Precio no es validad 'Min. 1 numero '");
+
+                }else if (chasistext.isEmpty() || chasistext.length() < 1){
                     showError(txtChasis, "Precio no es validad 'Min. 1 numero '");
 
                 }else {
